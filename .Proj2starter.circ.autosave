@@ -252,6 +252,7 @@ end TCL_Generic;&#13;
       <a name="label" val="Res"/>
       <a name="radix" val="16"/>
       <a name="type" val="output"/>
+      <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(210,150)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -270,6 +271,10 @@ end TCL_Generic;&#13;
       <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="2" loc="(1340,450)" name="Multiplexer">
+      <a name="select" val="4"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="3" loc="(430,300)" name="Adder">
       <a name="width" val="32"/>
     </comp>
@@ -279,23 +284,48 @@ end TCL_Generic;&#13;
     <comp lib="3" loc="(430,480)" name="Multiplier">
       <a name="width" val="32"/>
     </comp>
-    <comp lib="3" loc="(430,580)" name="Divider"/>
-    <comp lib="4" loc="(920,490)" name="Register">
+    <comp lib="3" loc="(430,580)" name="Divider">
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="4" loc="(880,510)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="HI"/>
     </comp>
-    <comp lib="4" loc="(920,690)" name="Register">
+    <comp lib="4" loc="(880,660)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="LO"/>
     </comp>
-    <wire from="(210,150)" to="(640,150)"/>
+    <wire from="(1240,380)" to="(1240,390)"/>
+    <wire from="(1240,380)" to="(1300,380)"/>
+    <wire from="(1280,300)" to="(1280,370)"/>
+    <wire from="(1280,370)" to="(1300,370)"/>
+    <wire from="(1320,530)" to="(1320,550)"/>
+    <wire from="(1320,550)" to="(1360,550)"/>
+    <wire from="(1340,450)" to="(1390,450)"/>
+    <wire from="(1360,150)" to="(1360,550)"/>
+    <wire from="(210,150)" to="(1360,150)"/>
     <wire from="(210,260)" to="(240,260)"/>
     <wire from="(210,730)" to="(260,730)"/>
-    <wire from="(240,260)" to="(240,780)"/>
-    <wire from="(260,230)" to="(260,730)"/>
-    <wire from="(570,500)" to="(570,530)"/>
-    <wire from="(570,530)" to="(640,530)"/>
-    <wire from="(640,150)" to="(640,530)"/>
+    <wire from="(240,260)" to="(240,290)"/>
+    <wire from="(240,290)" to="(240,380)"/>
+    <wire from="(240,290)" to="(390,290)"/>
+    <wire from="(240,380)" to="(240,470)"/>
+    <wire from="(240,380)" to="(390,380)"/>
+    <wire from="(240,470)" to="(240,570)"/>
+    <wire from="(240,470)" to="(390,470)"/>
+    <wire from="(240,570)" to="(240,780)"/>
+    <wire from="(240,570)" to="(390,570)"/>
+    <wire from="(260,230)" to="(260,310)"/>
+    <wire from="(260,310)" to="(260,400)"/>
+    <wire from="(260,310)" to="(390,310)"/>
+    <wire from="(260,400)" to="(260,490)"/>
+    <wire from="(260,400)" to="(390,400)"/>
+    <wire from="(260,490)" to="(260,590)"/>
+    <wire from="(260,490)" to="(390,490)"/>
+    <wire from="(260,590)" to="(260,730)"/>
+    <wire from="(260,590)" to="(390,590)"/>
+    <wire from="(430,300)" to="(1280,300)"/>
+    <wire from="(430,390)" to="(1240,390)"/>
   </circuit>
   <circuit name="Control">
     <a name="appearance" val="logisim_evolution"/>
