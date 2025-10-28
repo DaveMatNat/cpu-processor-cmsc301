@@ -1106,11 +1106,11 @@ end TCL_Generic;&#13;
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="slt"/>
     </comp>
-    <comp lib="8" loc="(452,764)" name="Text">
+    <comp lib="8" loc="(450,760)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="shamt"/>
     </comp>
-    <comp lib="8" loc="(453,851)" name="Text">
+    <comp lib="8" loc="(450,850)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="shamt"/>
     </comp>
@@ -1307,10 +1307,6 @@ end TCL_Generic;&#13;
       <circ-port dir="out" pin="1350,680" x="270" y="110"/>
       <circ-port dir="out" pin="1770,960" x="270" y="120"/>
     </appear>
-    <comp lib="0" loc="(1010,210)" name="Constant">
-      <a name="value" val="0x0"/>
-      <a name="width" val="5"/>
-    </comp>
     <comp lib="0" loc="(1200,290)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -1687,23 +1683,23 @@ end TCL_Generic;&#13;
     <comp lib="3" loc="(620,990)" name="Comparator">
       <a name="width" val="6"/>
     </comp>
-    <comp lib="8" loc="(1010,238)" name="Text">
+    <comp lib="8" loc="(1010,235)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="this is 0 if sll or slr"/>
     </comp>
-    <comp lib="8" loc="(1071,513)" name="Text">
+    <comp lib="8" loc="(1070,510)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="mux picks btn I type and shamt"/>
     </comp>
-    <comp lib="8" loc="(1098,746)" name="Text">
+    <comp lib="8" loc="(1095,745)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="1 if either sll/slr or I type"/>
     </comp>
-    <comp lib="8" loc="(1223,1436)" name="Text">
+    <comp lib="8" loc="(1220,1435)" name="Text">
       <a name="font" val="SansSerif bold 17"/>
       <a name="text" val="Logic for ALU code"/>
     </comp>
-    <comp lib="8" loc="(1232,120)" name="Text">
+    <comp lib="8" loc="(1230,120)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="for LUI, make rd to rs"/>
     </comp>
@@ -1711,15 +1707,15 @@ end TCL_Generic;&#13;
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="is_jump"/>
     </comp>
-    <comp lib="8" loc="(382,539)" name="Text">
+    <comp lib="8" loc="(380,535)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="opcode for I and J type"/>
     </comp>
-    <comp lib="8" loc="(483,259)" name="Text">
+    <comp lib="8" loc="(480,255)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="if 0 then it's R type"/>
     </comp>
-    <comp lib="8" loc="(530,659)" name="Text">
+    <comp lib="8" loc="(530,655)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="funct code for R type"/>
     </comp>
@@ -1771,15 +1767,15 @@ end TCL_Generic;&#13;
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="lui"/>
     </comp>
-    <comp lib="8" loc="(702,628)" name="Text">
+    <comp lib="8" loc="(700,625)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="last 6 bits of immediate if I type"/>
     </comp>
-    <comp lib="8" loc="(719,442)" name="Text">
+    <comp lib="8" loc="(715,440)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="rd if r type"/>
     </comp>
-    <comp lib="8" loc="(750,299)" name="Text">
+    <comp lib="8" loc="(750,295)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="rt if r type"/>
     </comp>
@@ -1847,18 +1843,20 @@ end TCL_Generic;&#13;
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="is_mult"/>
     </comp>
-    <comp lib="8" loc="(903,552)" name="Text">
+    <comp lib="8" loc="(900,550)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="make 16 bit immediate/adrr"/>
     </comp>
-    <comp lib="8" loc="(955,419)" name="Text">
+    <comp lib="8" loc="(955,415)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="shamt if not I type"/>
     </comp>
     <wire from="(1000,1650)" to="(1000,1760)"/>
     <wire from="(1000,1650)" to="(1370,1650)"/>
     <wire from="(1010,1470)" to="(1090,1470)"/>
+    <wire from="(1010,210)" to="(1010,290)"/>
     <wire from="(1010,210)" to="(1070,210)"/>
+    <wire from="(1010,290)" to="(1200,290)"/>
     <wire from="(1010,550)" to="(1010,1470)"/>
     <wire from="(1010,550)" to="(1250,550)"/>
     <wire from="(1020,450)" to="(1020,460)"/>
@@ -2179,7 +2177,7 @@ end TCL_Generic;&#13;
     <wire from="(780,530)" to="(820,530)"/>
     <wire from="(790,1920)" to="(790,1970)"/>
     <wire from="(790,1920)" to="(890,1920)"/>
-    <wire from="(790,290)" to="(1200,290)"/>
+    <wire from="(790,290)" to="(1010,290)"/>
     <wire from="(790,290)" to="(790,340)"/>
     <wire from="(790,380)" to="(790,470)"/>
     <wire from="(790,470)" to="(870,470)"/>
